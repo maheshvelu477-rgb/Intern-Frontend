@@ -1,0 +1,208 @@
+/* General Page Styling */
+.how-it-works-page {
+  padding: 80px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.page-header {
+  margin-bottom: 60px;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* Steps Section */
+.steps-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+.step-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  font-size: 3rem;
+  color: #4a00e0; /* Matches your main theme color */
+  margin-bottom: 20px;
+}
+
+.step-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.step-description {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Footer & Links */
+.page-footer {
+  font-size: 1rem;
+  color: #777;
+
+ }
+
+.footer-link {
+  color: #4a00e0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #4a00e0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Courses Page Specific Styles */
+.courses-page-container {
+  padding: 80px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-rating {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card-rating svg {
+  color: gold;
+}
+
+.course-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a1052ee;
+}
+
+ 
+/* General Page Styling for all pages */
+.page-header {
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #1a1052ee;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.forgot-password {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.forgot-password a {
+  color: #1a1052ee;
+  text-decoration: none;
+}
+
+.page-footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.footer-link {
+  color: #1a1052ee;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* --- Attractive Login Page Styles --- */
+
+  
+.btn.buy-now-btn {
+  width: 100%;
+  background-color: #1a1052ee;
+  color: #fff;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.btn.buy-now-btn:hover {
+  background-color: #1a1052ee;
+}
+

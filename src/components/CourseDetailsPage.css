@@ -1,0 +1,136 @@
+/* Color Palette */
+:root {
+  --primary-color: #1a1052; /* Deep indigo */
+  --accent-color: #4CAF50; /* A fresh green for secondary highlights */
+  --text-color-dark: #333;
+  --text-color-light: #666;
+  --background-color-light: #f8f9fa;
+  --card-background: #fff;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+}
+
+/* General Page Structure */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color-light);
+  color: var(--text-color-dark);
+}
+
+.course-details-page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+/* Header Section */
+.course-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-light);
+}
+
+.course-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.course-header .instructor {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--text-color-light);
+  margin-bottom: 1rem;
+}
+
+.course-header .description {
+  font-size: 1rem;
+  color: var(--text-color-dark);
+  line-height: 1.6;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--accent-color);
+}
+
+/* Course Content and Modules */
+.course-content {
+  background-color: var(--card-background);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-light);
+}
+
+.course-content h2 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.course-module {
+  margin-bottom: 2rem;
+}
+
+.course-module h3 {
+  font-size: 1.5rem;
+  color: var(--text-color-dark);
+  margin-bottom: 1rem;
+}
+
+.lesson-list {
+  list-style: none;
+  padding: 0;
+}
+
+.lesson-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lesson-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.lesson-item span {
+  font-size: 1rem;
+  color: var(--text-color-dark);
+}
+
+.btn.start-lesson-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* In case you use a Link component here */
+}
+
+.btn.start-lesson-btn:hover {
+  background-color: #2b1d6f;
+}

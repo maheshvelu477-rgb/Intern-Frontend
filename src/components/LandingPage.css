@@ -1,0 +1,413 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.landing-page {
+  /* Using the root variable will make color changes easier */
+  --primary-color: #1a1052ee;
+  --secondary-color: #f5f6fa;
+  --text-dark: #333;
+  --text-muted: #777;
+  --accent-color: #55c78a;
+  --hero-overlay: rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none; /* Ensure link buttons look good */
+  display: inline-block;
+  text-align: center;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+  background-image: url('https://d28y8cu0ilslnd.cloudfront.net/wp-content/uploads/2024/01/Education_Institutions_002.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 20px 0 100px;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--hero-overlay); /* Using a variable for the overlay */
+}
+
+.navbar, .hero-content {
+  position: relative;
+  z-index: 2; /* Increased z-index for clarity */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d1c4e9; /* Light purple on hover */
+}
+
+.btn.browse-btn {
+  background-color: var(--accent-color);
+  color: #fff;
+  margin-right: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn.login-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: none;
+}
+
+.btn.browse-btn:hover {
+  background-color: #4caf7c;
+}
+
+.btn.login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 80px auto 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.hero-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.hero-search input {
+  width: 400px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn.search-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 0 50px 50px 0;
+  transition: background-color 0.3s ease;
+}
+
+.btn.search-btn:hover {
+  background-color: #3e00b0;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  gap: 20px;
+}
+
+.hero-stats div p {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-stats div span {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* --- Features Section --- */
+.features-section {
+  background-color: var(--secondary-color);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.features-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.feature-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item svg {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.feature-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-item p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* --- Courses Section --- */
+.courses-section {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.courses-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.courses-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.courses-header p {
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+
+.btn.view-all-btn {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.btn.view-all-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.card-rating {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.card-rating svg {
+  color: gold;
+}
+
+.course-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.btn.buy-now-btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.btn.buy-now-btn:hover {
+  background-color: #3e00b0;
+}
+
+/* --- CTA Section --- */
+.cta-section {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.cta-buttons .btn {
+  margin: 0 10px;
+}
+
+.btn.browse-cta {
+  background-color: #fff;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.btn.browse-cta:hover {
+  background-color: #f0f0f0;
+}
+
+.btn.learn-more-cta {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn.learn-more-cta:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+ 
+/* Footer */
+.footer-section {
+  background-color: #333;
+  color: #fff;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: left;
+}
+
+.footer-col h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-col h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+.footer-col a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.7;
+}

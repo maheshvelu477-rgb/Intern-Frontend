@@ -1,0 +1,69 @@
+:root {
+  --primary-color: #1a1052;
+  --text-color-dark: #333;
+  --text-color-light: #666;
+  --background-color-light: #f8f9fa;
+  --card-background: #fff;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+}
+
+.my-courses-page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.enrolled-course-card {
+  background-color: var(--card-background);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.enrolled-course-card h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-status {
+  font-style: italic;
+  color: var(--text-color-light);
+  margin-bottom: 1.5rem;
+}
+
+.btn.continue-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn.continue-btn:hover {
+  background-color: #2b1d6f;
+}
+    

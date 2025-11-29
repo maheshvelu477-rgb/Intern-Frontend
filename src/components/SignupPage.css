@@ -1,0 +1,102 @@
+/* --- Signup Page Specific Styles --- */
+
+.signup-page-container {
+  /* Use the same background as the login page */
+  background-image: url('https://d28y8cu0ilslnd.cloudfront.net/wp-content/uploads/2024/01/Education_Institutions_002.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  padding: 20px;
+}
+
+.signup-form {
+  /* Apply the same "glass" card effect */
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  text-align: left;
+}
+
+.signup-page-container .page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.signup-page-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 5px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.signup-page-container .subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.btn.signup-submit-btn {
+  width: 100%;
+  background-color: #fff;
+  color: #4a00e0;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.btn.signup-submit-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.signup-page-container .page-footer p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}

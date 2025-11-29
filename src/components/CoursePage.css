@@ -1,0 +1,181 @@
+/* Color Palette */
+:root {
+  --primary-color: #1a1052; /* A deep, rich indigo */
+  --accent-color: #ffc107; /* A classic, vibrant gold */
+  --text-color: #424242; /* Dark gray for readability */
+  --background-color: #f8f9fa; /* Soft off-white */
+  --card-background: #ffffff;
+  --shadow-light: rgba(0, 0, 0, 0.08);
+  --shadow-medium: rgba(0, 0, 0, 0.15);
+}
+
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.courses-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Header & Typography */
+.page-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.page-title {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.page-header .subtitle {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--accent-color);
+}
+
+/* Courses Grid & Cards */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
+.course-card {
+  background-color: var(--card-background);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px var(--shadow-light);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px var(--shadow-medium);
+}
+
+.course-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 60%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.course-image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.course-card:hover .course-image-container img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.course-description {
+  font-size: 1rem;
+  color: #666;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto; /* Pushes the footer to the bottom of the card */
+  margin-bottom: 1rem;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+  color: #ffb74d; /* Slightly muted orange for rating */
+  font-weight: 500;
+}
+
+.star-icon {
+  margin-right: 0.25rem;
+  color: var(--accent-color);
+}
+
+.ratings-count {
+  font-size: 0.9rem;
+  color: #888;
+  margin-left: 0.5rem;
+}
+
+.course-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: -0.5px;
+}
+
+/* Button */
+.btn.buy-now-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(26, 16, 82, 0.25);
+}
+
+.btn.buy-now-btn:hover {
+  background-color: #2b1d6f; /* A slightly lighter shade for hover effect */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(26, 16, 82, 0.35);
+}
+
+.btn.buy-now-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(26, 16, 82, 0.15);
+}

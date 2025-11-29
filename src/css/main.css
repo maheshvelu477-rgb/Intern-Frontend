@@ -1,0 +1,78 @@
+  :root {
+            --sidebar-bg: #2b3e50;
+            --sidebar-color: #ecf0f1;
+            --hover-bg: #34495e;
+            --active-bg: #3498db;
+            --main-bg: #f4f7f9;
+        }
+
+        body {
+            background-color: var(--main-bg);
+        }
+
+        /* Full-height sidebar for large screens */
+        .sidebar-container {
+            background-color: var(--sidebar-bg);
+            min-height: 100vh;
+            color: var(--sidebar-color);
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+            padding-top: 15px;
+        }
+
+        .sidebar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .sidebar-menu .nav-link {
+            color: var(--sidebar-color);
+            padding: 15px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar-menu .nav-link:hover,
+        .sidebar-menu .nav-link.active {
+            background-color: var(--hover-bg);
+            color: #fff;
+        }
+
+        .sidebar-menu .nav-link.active {
+            background-color: var(--active-bg);
+        }
+
+        .sidebar-menu .nav-link i {
+            margin-right: 15px;
+        }
+
+        /* Main content area */
+        .main-content {
+            padding: 20px;
+        }
+
+        .dashboard-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Offcanvas for mobile */
+        .offcanvas.sidebar-offcanvas {
+            background-color: var(--sidebar-bg);
+        }
+
+        .offcanvas-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .offcanvas-title {
+            color: var(--sidebar-color);
+        }
+
+        .btn-close {
+            filter: invert(1);
+        }

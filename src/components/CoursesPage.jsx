@@ -8,7 +8,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios'; 
 
 // --- START OF IMAGE FIX ---
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://intern-backend-chi.vercel.app';
 const API_URL = `${API_BASE_URL}/api/v1/courses`; 
 // --- END OF IMAGE FIX ---
 

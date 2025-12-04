@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Nav from "./Nav";
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://intern-backend-chi.vercel.app';
 const API_URL = `${API_BASE_URL}/api/v1/mentors`;
 
 export default function AddMentor() {

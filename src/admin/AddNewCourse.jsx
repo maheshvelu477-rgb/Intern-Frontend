@@ -20,7 +20,7 @@ export default function AddNewCourse() {
     const navigate = useNavigate();
 
     // Base URL for the API
-    const API_URL = "http://localhost:8000/api/v1/courses"; 
+    const API_URL = "https://intern-backend-chi.vercel.app/api/v1/courses"; 
 
     // Handler for text input changes
     const handleChange = (e) => {
